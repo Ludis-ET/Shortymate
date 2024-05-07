@@ -51,7 +51,7 @@
             {% csrf_token %}
             <span class="login100-form-title"> Shortymate Url </span>
             {% if new %}
-            <div class="new">
+            <div class="new" style="margin-left: -10px;">
               <i onclick="copyToClipboard('{{new}}')" class="fa fa-copy"></i>
               <p>{{new}}</p>
               <a
