@@ -4,7 +4,7 @@ import uuid
 
 class ShortenedURL(models.Model):
     long_url = models.URLField()
-    short_code = models.CharField(max_length=20, unique=True)
+    short_code = models.CharField(max_length=7, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
